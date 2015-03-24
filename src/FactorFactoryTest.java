@@ -9,10 +9,9 @@ import org.junit.Test;
 public class FactorFactoryTest {
 
 	@Test
-	public void testEmpty() {
+	public void testThatOneHasNoPrimeFactors() {
 		List<Integer> expected = new ArrayList<Integer>();
 		List<Integer> actual = FactorFactory.getFactors(1);
 		assertEquals(expected, actual);
 	}
-
 }
