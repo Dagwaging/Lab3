@@ -22,4 +22,12 @@ public class FactorFactoryTest {
 		List<Integer> actual = FactorFactory.getFactors(2);
 		assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void testThatThreeHasOnlyItselfAsPrimeFactor() {
+		List<Integer> expected = new ArrayList<Integer>();
+		expected.add(3);
+		List<Integer> actual = FactorFactory.getFactors(3);
+		assertEquals(expected, actual);
+	}
 }
