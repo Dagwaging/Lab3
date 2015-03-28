@@ -49,4 +49,11 @@ public class FactorFactoryTest {
 		List<Integer> actual = FactorFactory.getFactors(8);
 		assertEquals(expected, actual);
 	}
+
+	@Test
+	public void testThatNineHasThreeAndThreeAsPrimeFactors() {
+		List<Integer> expected = Arrays.asList(3, 3);
+		List<Integer> actual = FactorFactory.getFactors(9);
+		assertEquals(expected, actual);
+	}
 }
