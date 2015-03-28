@@ -22,6 +22,14 @@ public class FactorFactory {
 			primes.add(n);
 		}
 		
+		for(int n = 0; n < primes.size(); n++) {
+			int prime = primes.get(n);
+			
+			for(int m = 2 * prime; m < i; m += prime) {
+				primes.remove((Integer) m);
+			}
+		}
+		
 		return primes;
 	}
 
