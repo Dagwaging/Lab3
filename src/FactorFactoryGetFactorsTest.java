@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class FactorFactoryTest {
+public class FactorFactoryGetFactorsTest {
 
 	@Test
 	public void testThatOneHasNoPrimeFactors() {
