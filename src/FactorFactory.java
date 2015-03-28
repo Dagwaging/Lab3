@@ -6,7 +6,7 @@ public class FactorFactory {
 	public static List<Integer> getFactors(int i) {
 		List<Integer> factors = new ArrayList<Integer>();
 		
-		if (i % 2 == 0) {
+		while (i % 2 == 0) {
 			factors.add(2);
 			i /= 2;
 		}
