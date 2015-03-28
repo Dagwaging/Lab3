@@ -1,4 +1,6 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
 
 import org.junit.Test;
 
@@ -6,8 +8,10 @@ import org.junit.Test;
 public class FactorFactoryGenerateTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testPrimesBelowOne() {
+		ArrayList<Integer> expected = new ArrayList<Integer>();
+		ArrayList<Integer> actual = FactorFactory.generate(1);
+		assertEquals(expected, actual);
 	}
 
 }
