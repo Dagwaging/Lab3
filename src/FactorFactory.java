@@ -16,7 +16,13 @@ public class FactorFactory {
 	}
 
 	public static ArrayList<Integer> generate(int i) {
-		return new ArrayList<Integer>();
+		ArrayList<Integer> primes = new ArrayList<Integer>();
+		
+		if(i > 2) {
+			primes.add(2);
+		}
+		
+		return primes;
 	}
 
 }
