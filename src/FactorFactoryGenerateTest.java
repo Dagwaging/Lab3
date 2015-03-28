@@ -28,7 +28,8 @@ public class FactorFactoryGenerateTest {
 				{ 3, Arrays.asList(2) },
 				{ 4, Arrays.asList(2, 3) },
 				{ 6, Arrays.asList(2, 3, 5) },
-				{ 8, Arrays.asList(2, 3, 5, 7) }
+				{ 8, Arrays.asList(2, 3, 5, 7) },
+				{ 12, Arrays.asList(2, 3, 5, 7, 11) }
 		});
 	}
 	
