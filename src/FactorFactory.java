@@ -15,4 +15,8 @@ public class FactorFactory {
 		return factors;
 	}
 
+	public static ArrayList<Integer> generate(int i) {
+		return new ArrayList<Integer>();
+	}
+
 }
