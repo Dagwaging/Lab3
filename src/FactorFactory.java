@@ -5,14 +5,11 @@ public class FactorFactory {
 
 	public static List<Integer> getFactors(int i) {
 		List<Integer> factors = new ArrayList<Integer>();
-		
-		while (i % 2 == 0) {
-			factors.add(2);
-			i /= 2;
-		}
 
-		if (i > 1) {
-			factors.add(i);
+		for (int factor = 2; i > 1; factor++) {
+			for (; i % factor == 0; i /= factor) {
+				factors.add(factor);
+			}
 		}
 
 		return factors;
