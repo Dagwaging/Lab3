@@ -18,8 +18,8 @@ public class FactorFactory {
 	public static ArrayList<Integer> generate(int i) {
 		ArrayList<Integer> primes = new ArrayList<Integer>();
 		
-		if(i > 2) {
-			primes.add(2);
+		for(int n = 2; n < i; n++) {
+			primes.add(n);
 		}
 		
 		return primes;
