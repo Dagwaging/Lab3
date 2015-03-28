@@ -36,4 +36,11 @@ public class FactorFactoryTest {
 		List<Integer> actual = FactorFactory.getFactors(4);
 		assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void testThatSixHasTwoAndThreeAsPrimeFactors() {
+		List<Integer> expected = Arrays.asList(2, 3);
+		List<Integer> actual = FactorFactory.getFactors(6);
+		assertEquals(expected, actual);
+	}
 }
