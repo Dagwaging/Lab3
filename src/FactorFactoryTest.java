@@ -56,4 +56,11 @@ public class FactorFactoryTest {
 		List<Integer> actual = FactorFactory.getFactors(9);
 		assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void testFinalPrimeFactors() {
+		List<Integer> expected = Arrays.asList(5, 7, 7, 1327);
+		List<Integer> actual = FactorFactory.getFactors(325115);
+		assertEquals(expected, actual);	
+	}
 }
